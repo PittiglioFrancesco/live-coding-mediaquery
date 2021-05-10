@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blue{
+    height: 250px;
+    width: 100%;
+
+    background-color: blue;
+}
+
+.green, .white{
+    width: 0;
+}
+
+@media screen and (min-width: 580px) {
+
+    .blue{
+        width: 40%;
+        float: left;
+    }
+    
+    .green{
+        background-color: lime;
+        float: left;
+        width: 60%;
+        height: 250px;
+    }
+
+    .green::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .white{
+        height: 200px;
+        width: 200px;
+        background-color: #fff;
+        float: left;
+        margin: 20px;
+    }
+
+}
